@@ -5,7 +5,10 @@ import java.io.*;
 public class Archivo {
 //creacion de la ruta
 private static final String RUTA_DIRECTORIO = "C:\\ArchivosJava";
-//metodo crear Archivo
+/**
+ * Metodo el cual crea Archivos
+ * @param nombreArchivo 
+ */
 public static void crearArchivo(String nombreArchivo){
     //creacion del objeto directorio
     File directorio= new File(RUTA_DIRECTORIO); //creacion de objeto
@@ -30,7 +33,17 @@ public static void crearArchivo(String nombreArchivo){
        ex.printStackTrace(System.out);
    }
   }
-//creacion del metodo EscribirDatos
+/**
+ * Metodo que Guarda los Datos en un archivo Txt
+ * @param nombreArchivo
+ * @param nombre
+ * @param edad
+ * @param nota1
+ * @param nota2
+ * @param nota3
+ * @param nota4
+ * @param promedio 
+ */
 public static void escribirDatos(String nombreArchivo, String nombre, int edad, int nota1, int nota2, int nota3, int nota4, double promedio){
     //creacion del Objeto que guarda Datos
     File archivo= new File(RUTA_DIRECTORIO, nombreArchivo);

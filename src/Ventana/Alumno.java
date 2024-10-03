@@ -14,19 +14,31 @@ public class Alumno {
     private String nombre;
     private int edad;
     
-    //Creacion de Metodo nombre
+    /**
+     * Metodo el Cual recibe una Dato en este Caso el Nombre
+     * @param entrada 
+     */
      public void leerNombre(Scanner entrada) {
         nombre = entrada.nextLine();
     }
-// retorno del Metodo
+/**
+ * Meotodo el cual Retorna el Nombre
+ * @return Nombre
+ */
     public String getNombre() {
         return nombre;
     }
-//Creacion del Metodo Edad
+/**
+ * Meotodo el cual recibe una edad
+ * @param entrada
+ */
     public void leerEdad(Scanner entrada) {
         edad = entrada.nextInt();
     }
-
+/**
+ * Metodo el cual regresa la Edad
+ * @return 
+ */
     public int getEdad() {
         return edad;
     }
